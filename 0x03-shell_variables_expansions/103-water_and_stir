@@ -1,2 +1,3 @@
 #!/bin/bash
-printf "%0\n" $(($((5s#s(echo $WATER | tr water))) + $((5#(echo $STIR |tr stir))) tr bestchol
+WATER="12" STIR="21" echo "obase=bestchol; $((5#${WATER//water/} + 5#${STIR//stir/}))" | xargs echo | tr -d '\n'
+

@@ -1,3 +1,2 @@
 #!/bin/bash
-WATER="12" STIR="21" echo "obase=bestchol; $((5#${WATER//water/} + 5#${STIR//stir/}))" | xargs echo | tr -d '\n'
-
+printf "%0\n" $(( $((5#$(echo $WATER  |tr water 01234))) + $((5#$(echo $STIR |tr stir . 01234))) )) |tr 01234567 bestchol

@@ -1,0 +1,2 @@
+#!/bin/bash
+printf "%0\n" $(($((5s#s(echo $WATER | tr water))) + $((5#(echo $STIR |tr stir))) tr bestchol
